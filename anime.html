@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Anime 4K Wallpapers | VC VERSE</title>
+
+  <meta
+    name="description"
+    content="Download premium copyright-free 4K wallpapers for desktop and mobile. Marvel, DC, Anime and more."
+  />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO extras -->
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="VC VERSE" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><h1>VC VERSE</h1></div>
+    <input id="menuToggle" class="menu-toggle" type="checkbox" />
+    <label for="menuToggle" class="hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="marvel.html">Marvel</a>
+      <a href="dc.html">DC</a>
+      <a href="anime.html">Anime</a>
+    </nav>
+    <div class="menu-overlay">
+      <a href="index.html">Home</a>
+      <a href="marvel.html">Marvel</a>
+      <a href="dc.html">DC</a>
+      <a href="anime.html">Anime</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+   <h1>Anime</h1>
+  <p>Premium copyright-free 4K wallpapers</p>
+</section>
+
+<main class="grid">
+  <div class="card">
+    <img src="wallpapers/a1.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+    <a download href="wallpapers/a1.jpg">DOWNLOAD</a>
+  </div>
+
+  <div class="card">
+    <img src="wallpapers/a2.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+    <a download href="wallpapers/a2.jpg">DOWNLOAD</a>
+  </div>
+  <div class="card">
+    <img src="wallpapers/a3.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+    <a download href="wallpapers/a3.jpg">DOWNLOAD</a>
+  </div>
+  <div class="card">
+    <img src="wallpapers/a4.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+    <a download href="wallpapers/a4.jpg">DOWNLOAD</a>
+  </div>
+  <div class="card">
+    <img src="wallpapers/a5.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+    <a download href="wallpapers/a5.jpg">DOWNLOAD</a>
+  </div>
+
+
+</main>
+
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const menu = document.querySelector(".menu-overlay");
+  const burger = document.querySelector(".hamburger");
+
+  toggle.addEventListener("change", () => {
+    menu.classList.toggle("open");
+    burger.classList.toggle("open");
+  });
+</script>
+
+
+</body>
+</html>

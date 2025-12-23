@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav {
+  border-bottom: 1px solid #222;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: #333;
+}
+
+.hamburger {
+  display: none;
+  width: 36px;
+  height: 28px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: currentColor;
+  border-radius: 3px;
+  transition: transform 180ms ease, opacity 160ms ease;
+}
+
+.menu-overlay {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  color: #aaa;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 32px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.card a {
+  display: block;
+  margin-top: 12px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.card a:hover {
+  background: white;
+  color: black;
+}
+
+/* Mobile: make grid two cards per row */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+}
+
+/* Responsive nav: show hamburger on small screens */
+@media (max-width: 800px) {
+  .nav-inner { padding: 12px 16px; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; color: rgb(255, 255, 255); }
+  .menu-toggle { display: none; }
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    transform: translateY(-6%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 220ms ease, transform 220ms ease;
+    z-index: 60;
+  }
+  .menu-overlay a { color: rgb(255, 255, 255); font-size: 1.2rem; text-decoration: none; }
+  .menu-overlay.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+}
