@@ -52,25 +52,72 @@
 
 <main class="grid">
   <div class="card">
-    <img src="wallpapers/a1.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/a1.jpg">DOWNLOAD</a>
+    <img src="wallpapers/anime/a1.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+ <a
+  href="wallpapers/anime/a1.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
 
   <div class="card">
-    <img src="wallpapers/a2.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/a2.jpg">DOWNLOAD</a>
+    <img src="wallpapers/anime/a2.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+   <a
+  href="wallpapers/anime/a2.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
+
+
   <div class="card">
-    <img src="wallpapers/a3.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/a3.jpg">DOWNLOAD</a>
+    <img src="wallpapers/anime/a3.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+  <a
+  href="wallpapers/anime/a3.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
+
+
   <div class="card">
-    <img src="wallpapers/a4.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/a4.jpg">DOWNLOAD</a>
+    <img src="wallpapers/anime/a4.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+   <a
+  href="wallpapers/anime/a4.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
+
+
+  
   <div class="card">
-    <img src="wallpapers/a5.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/a5.jpg">DOWNLOAD</a>
+    <img src="wallpapers/anime/a5.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+   <a
+  href="wallpapers/anime/a5.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
 
 
@@ -85,6 +132,17 @@
     menu.classList.toggle("open");
     burger.classList.toggle("open");
   });
+</script>
+
+
+<script>
+  function showDownloaded(btn) {
+    btn.classList.add("active");
+
+    setTimeout(() => {
+      btn.classList.remove("active");
+    }, 1500); // ⏱ change time here (milliseconds)
+  }
 </script>
 
 
