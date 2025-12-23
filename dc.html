@@ -51,20 +51,85 @@
 
 <main class="grid">
   <div class="card">
-    <img src="wallpapers/d1.jpg" alt="DC 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/d1.jpg">DOWNLOAD</a>
+    <img src="wallpapers/dc/d1.jpg" alt="DC 4K wallpaper for desktop and mobile"/>
+   <a
+  href="wallpapers/dc/d1.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
 
   <div class="card">
-    <img src="wallpapers/d2.jpg" alt="DC 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/d2.jpg">DOWNLOAD</a>
+    <img src="wallpapers/dc/d2.jpg" alt="DC 4K wallpaper for desktop and mobile"/>
+ <a
+  href="wallpapers/dc/d2.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
 
   <div class="card">
-    <img src="wallpapers/d3.jpg" alt="DC 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/d3.jpg">DOWNLOAD</a>
+    <img src="wallpapers/dc/d3.jpg" alt="DC 4K wallpaper for desktop and mobile"/>
+    <a
+  href="wallpapers/dc/d3.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
 
+  <div class="card">
+    <img src="wallpapers/dc/d (2).jpg" alt="DC 4K wallpaper for desktop and mobile"/>
+   <a 
+  href="wallpapers/dc/d (2).jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
+  </div>
+
+
+  
+  <div class="card">
+    <img src="wallpapers/dc/d (3).jpg" alt="DC 4K wallpaper for desktop and mobile"/>
+   <a 
+  href="wallpapers/dc/d (3).jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
+  </div>
+
+  
+  <div class="card">
+    <img src="wallpapers/dc/batman.jpg" alt="DC 4K wallpaper for desktop and mobile"/>
+   <a 
+  href="wallpapers/dc/batman.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
+  </div>
 
 <script>
   const toggle = document.getElementById("menuToggle");
@@ -76,6 +141,19 @@
     burger.classList.toggle("open");
   });
 </script>
+
+
+
+<script>
+  function showDownloaded(btn) {
+    btn.classList.add("active");
+
+    setTimeout(() => {
+      btn.classList.remove("active");
+    }, 1500); // ⏱ change time here (milliseconds)
+  }
+</script>
+
 
 </body>
 </html>
