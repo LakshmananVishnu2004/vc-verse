@@ -50,49 +50,156 @@
 </section>
 
 <main class="grid">
-  <div class="card">
-    <img src="wallpapers/a4.jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/a4.jpg">DOWNLOAD</a>
-  </div>
 
-  <div class="card">
-    <img src="wallpapers/d3.jpg" alt="Wallpaper 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/d3.jpg">DOWNLOAD</a>
-  </div>
-  <div class="card">
-    <img src="wallpapers/m4.jpg" alt="Marvel 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/m4.jpg">DOWNLOAD</a>
-  </div>
-  <div class="card">
-    <img src="wallpapers/m2.jpg" alt="Marvel 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/m2.jpg">DOWNLOAD</a>
-  </div>
-  <div class="card">
-    <img src="wallpapers/m5.jpg" alt="Marvel 4K wallpaper for desktop and mobile"/>
-    <a download href="wallpapers/m5.jpg">DOWNLOAD</a>
-  </div>
+
 
 
   <div class="card">
-    <img src="wallpapers/m1.jpg" />
-    <a download href="wallpapers/m1.jpg">DOWNLOAD</a>
+    <img src="wallpapers/marvel/spiderman (1).jpg" alt="Anime 4K wallpaper for desktop and mobile"/>
+    <a
+  href="wallpapers/marvel/spiderman (1).jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
+  </div>
+
+
+
+  
+
+  <div class="card">
+    <img src="wallpapers/dc/d3.jpg" alt="Wallpaper 4K wallpaper for desktop and mobile"/>
+   <a
+  href="wallpapers/dc/d3.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
+  </div>
+ 
+
+
+  <div class="card">
+    <img src="wallpapers/marvel/m4.jpg" alt="Marvel 4K wallpaper for desktop and mobile"/>
+<a
+  href="wallpapers/marvel/m4.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
+  </div>
+
+
+
+
+  <div class="card">
+    <img src="wallpapers/dc/d2.jpg" alt="Marvel 4K wallpaper for desktop and mobile"/>
+    <a
+  href="wallpapers/dc/d2.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
+  </div>
+
+
+
+  <div class="card">
+    <img src="wallpapers/marvel/m5.jpg" alt="Marvel 4K wallpaper for desktop and mobile"/>
+   <a
+  href="wallpapers/marvel/m5.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
+  </div>
+
+
+  <div class="card">
+    <img src="wallpapers/anime/a3.jpg" />
+    <a
+  href="wallpapers/anime/a3.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
 
   <div class="card">
     <img src="wallpapers/w3.jpg" />
-    <a download href="wallpapers/w3.jpg">DOWNLOAD</a>
+    <a
+  href="wallpapers/w3.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
+
+
+
   <div class="card">
-    <img src="wallpapers/m4.jpg" />
-    <a download href="wallpapers/m4.jpg">DOWNLOAD</a>
+    <img src="wallpapers/marvel/m4.jpg" />
+   <a
+  href="wallpapers/marvel/m4.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
+
+
+
   <div class="card">
-    <img src="wallpapers/m2.jpg" />
-    <a download href="wallpapers/m2.jpg">DOWNLOAD</a>
+    <img src="wallpapers/marvel/m2.jpg" />
+    <a
+  href="wallpapers/marvel/m2.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
+
+
+
   <div class="card">
-    <img src="wallpapers/m5.jpg" />
-    <a download href="wallpapers/m5.jpg">DOWNLOAD</a>
+    <img src="wallpapers/marvel/m5.jpg" />
+   <a
+  href="wallpapers/marvel/m5.jpg"
+  download
+  class="download-btn"
+  onclick="showDownloaded(this)"
+>
+  <span class="text">DOWNLOAD</span>
+  <span class="done">✓ Downloaded</span>
+</a>
   </div>
 </main>
 
@@ -108,6 +215,19 @@
     burger.classList.toggle("open");
   });
 </script>
+
+
+
+<script>
+  function showDownloaded(btn) {
+    btn.classList.add("active");
+
+    setTimeout(() => {
+      btn.classList.remove("active");
+    }, 1500); // ⏱ change time here (milliseconds)
+  }
+</script>
+
 
 
 </body>
